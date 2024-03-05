@@ -1,7 +1,7 @@
 // NAVIGATION
 export const NAV_LINKS = [
     { href: '/', key: 'home', label: 'Home' },
-    { href: '/', key: 'how_hilink_work', label: 'How Hilink Work?' },
+    { href: '/', key: 'how_RoaminGo_work', label: 'How RoaminGo Work?' },
     { href: '/', key: 'services', label: 'Services' },
     { href: '/', key: 'pricing ', label: 'Pricing ' },
     { href: '/', key: 'contact_us', label: 'Contact Us' },
@@ -29,7 +29,7 @@ export const NAV_LINKS = [
       icon: '/calendar.svg',
       variant: 'green',
       description:
-        "Schedule an adventure with friends. On holidays, there are many interesting offers from Hilink. That way, there's no more discussion",
+        "Schedule an adventure with friends. On holidays, there are many interesting offers from RoaminGo. That way, there's no more discussion",
     },
     {
       title: 'Technology using augment reality',
@@ -47,12 +47,45 @@ export const NAV_LINKS = [
     },
   ];
   
+  export const DESTINY = [
+
+    // { DESTINY.map((e , i)=> {
+    //   return(
+    //     <Fragment key={i}>
+          
+    //     </Fragment>
+    //   )
+    //  }) }
+
+    {
+      place : 'Gulmarg',
+      distance : '1287 Km',
+      elevation :  '2.080 Km' },
+    {
+      place : 'Ladakh',
+      distance : '1160 Km',
+      elevation :  '1.404 Km'   
+    },
+    {
+      place : 'Kedarnath',
+      distance : '1290 Km',
+      elevation : " 1.665 Km "  
+    },
+    {
+      place : 'Shimla',
+      distance : '1033 Km',
+      elevation : "0.005 Km"     
+    }
+  ];
+  
+
+
   // FOOTER SECTION
   export const FOOTER_LINKS = [
     {
       title: 'Learn More',
       links: [
-        'About Hilink',
+        'About RoaminGo',
         'Press Releases',
         'Environment',
         'Jobs',
@@ -62,7 +95,7 @@ export const NAV_LINKS = [
     },
     {
       title: 'Our Community',
-      links: ['Climbing xixixi', 'Hiking hilink', 'Hilink kinthill'],
+      links: ['Climbing xixixi', 'Hiking RoaminGo', 'RoaminGo kinthill'],
     },
   ];
   
@@ -70,7 +103,7 @@ export const NAV_LINKS = [
     title: 'Contact Us',
     links: [
       { label: 'Admin Officer', value: '123-456-7890' },
-      { label: 'Email Officer', value: 'hilink@akinthil.com' },
+      { label: 'Email Officer', value: 'RoaminGo@divyanshu.com' },
     ],
   };
   
