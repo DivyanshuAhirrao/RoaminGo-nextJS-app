@@ -1,5 +1,4 @@
 "use client";
-
 import Camp from "@/components/Camp";
 import Features from "@/components/Features";
 import GetApp from "@/components/GetApp";
@@ -25,7 +24,7 @@ export default function Home() {
         <Guide />
       </div>
       <div data-aos="flip-up" data-aos-duration="1000">
-        x<Features />
+        <Features />
       </div>
       <div
         data-aos="zoom-out-up"

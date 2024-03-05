@@ -48,15 +48,6 @@ export const NAV_LINKS = [
   ];
   
   export const DESTINY = [
-
-    // { DESTINY.map((e , i)=> {
-    //   return(
-    //     <Fragment key={i}>
-          
-    //     </Fragment>
-    //   )
-    //  }) }
-
     {
       place : 'Gulmarg',
       distance : '1287 Km',

@@ -5,12 +5,13 @@ import Button from "./Button";
 import Image from "next/image";
 import HoverRating from "./Rating";
 import { DESTINY } from "@/constants/index";
+import Lottie from "lottie-react";
+import car from "./media/car.json";
 
 const Hero = () => {
   const [place, setPlace] = useState("Mumbai");
   const [distance, setDistance] = useState("1960 Km");
   const [elevation, setElevation] = useState("0.223 Km");
-  
 
   useEffect(() => {
     const runner = () => {
@@ -20,7 +21,7 @@ const Hero = () => {
         setDistance(DESTINY[index].distance);
         setElevation(DESTINY[index].elevation);
         index = (index + 1) % DESTINY.length;
-      }, 5000);
+      }, 3000);
       return () => clearInterval(intervalId);
     };
     runner();
@@ -69,10 +70,20 @@ const Hero = () => {
         <div className="relative z-20 flex w-[268px] flex-col gap-8 rounded-3xl bg-green-90 px-7 py-8">
           <div className="flex flex-col">
             <div className="flexBetween">
-              <p className="regular-16 text-gray-20">Location</p>
-              <Image src="/close.svg" alt="close" width={24} height={24} />
+              <aside className="w-[50%]">
+                <p className="regular-16 text-gray-20">Location</p>
+                <p
+                  className="bold-20 text-white"
+                  data-aos="fade-up"
+                  data-aos-anchor-placement="top-bottom"
+                >
+                  {place}{" "}
+                </p>
+              </aside>
+              <aside className="w-[50%]">
+                <Lottie animationData={car} className="w-24 relative bottom-8 left-5" />
+              </aside>
             </div>
-            <p className="bold-20 text-white">{place} </p>
           </div>
 
           <div className="flexBetween">
