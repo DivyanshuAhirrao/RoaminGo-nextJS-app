@@ -19,7 +19,7 @@ export default function RootLayout({
   return (
     <html lang="en">
        <head>
-        <link rel="icon" href="/logo.png" />
+        <link rel="icon" href="/camp.svg" />
       </head>
       <body>
         <Navbar />

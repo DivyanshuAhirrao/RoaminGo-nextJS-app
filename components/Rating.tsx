@@ -1,9 +1,9 @@
 "use client"
-
 import * as React from 'react';
 import Rating from '@mui/material/Rating';
 import Box from '@mui/material/Box';
 import StarIcon from '@mui/icons-material/Star';
+
 
 const labels: { [index: string]: string } = {
   0.5: 'Useless',
