@@ -10,7 +10,6 @@ const BusLayout = () => {
         <BusCard />
         <BusCard />
         <BusCard />
-        
       </section>
     </main>
   );

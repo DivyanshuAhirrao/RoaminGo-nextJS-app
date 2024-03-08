@@ -6,7 +6,7 @@ import Button from "./Button"
 const Navbar = () => {
   return (
     <nav className="border-b-2 border-gray-10  bg-[#ffffffb9] flexBetween max-container padding-container relative z-30 py-5">
-      <Link href="/">
+      <Link href="/bus">
         <Image src="/roamingo.png" alt="logo" width={190} height={50} />
       </Link>
 
