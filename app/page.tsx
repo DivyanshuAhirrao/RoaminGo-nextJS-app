@@ -48,13 +48,13 @@ export default function Home() {
       }
     </div> */}
 
-      {/* <div data-aos="flip-up" data-aos-duration="1000">
+      <div data-aos="flip-up" data-aos-duration="1000">
         <Hero />
-      </div> */}
+      </div>
       <div data-aos="zoom-out-up" data-aos-duration="1000">
         <BookingLayout />
       </div>
-      {/* <div data-aos="zoom-in" data-aos-duration="1000">
+      <div data-aos="zoom-in" data-aos-duration="1000">
         <Camp />
       </div>
       <div data-aos="zoom-out-up" data-aos-duration="1000">
@@ -69,7 +69,7 @@ export default function Home() {
         data-aos-duration="1000"
       >
         <GetApp />
-      </div> */}
+      </div>
 
     </>
   );
