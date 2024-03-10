@@ -6,6 +6,7 @@ import train from "../media/train.json";
 import SwipperComponent from "../bus/SwipperComponent";
 import { TravelCard } from "../travelCard/TravelCard";
 
+
 const BookingLayout = () => {
   return (
     <>
@@ -16,14 +17,14 @@ const BookingLayout = () => {
         >
           <SwipperComponent />
         </aside>
-        <aside className="xs:w-[100%] sm:w-[35%] sm:h-[27vw] xs:h-[49vw] border-2 border-red-950">
+        <aside className="xs:w-[100%] sm:w-[35%] sm:h-[27vw] xs:h-[49vw]">
           <article className="w-[100%] h-[100%] flex flex-col gap-1 items-center">
-            <div className="w-[95%] h-[50%] flex gap-1">
+            <div className="w-[95%] h-[50%] flex gap-3">
               <div className="w-[50%] h-[100%]">
-                <TravelCard />
+                <TravelCard btn='BUS' href='bus' img={bus} />
               </div>{" "}
-              <div className="w-[50%] h-[100%]">
-                <TravelCard />
+              <div className="w-[50%] h-[100%] relative top-10">
+                <TravelCard btn='Train' href='train' img={train}/>
               </div>
             </div>
           </article>
