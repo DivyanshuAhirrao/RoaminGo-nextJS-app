@@ -1,4 +1,3 @@
-import Lottie from "lottie-react";
 import React from "react";
 import flight from "../media/flight.json";
 import bus from "../media/bus.json";
@@ -6,27 +5,21 @@ import train from "../media/train.json";
 import SwipperComponent from "../bus/SwipperComponent";
 import { TravelCard } from "../travelCard/TravelCard";
 
-
 const BookingLayout = () => {
   return (
     <>
       <main className=" w-[100%] py-16 sm:px-16 xs:px-6 flex flex-wrap">
-        <aside
+        {/* <aside
           className="xs:w-[100%] sm:w-[65%] sm:h-[27vw] xs:h-[49vw]"
           id="swiper-box"
         >
           <SwipperComponent />
-        </aside>
-        <aside className="xs:w-[100%] sm:w-[35%] sm:h-[27vw] xs:h-[49vw]">
-          <article className="w-[100%] h-[100%] flex flex-col gap-1 items-center">
-            <div className="w-[95%] h-[50%] flex gap-3">
-              <div className="w-[50%] h-[100%]">
-                <TravelCard btn='BUS' href='bus' img={bus} />
-              </div>{" "}
-              <div className="w-[50%] h-[100%] relative top-10">
-                <TravelCard btn='Train' href='train' img={train}/>
-              </div>
-            </div>
+        </aside> */}
+        <aside className="w-[80%] h-[27vw]">
+          <article className="w-[100%] h-[100%] flex gap-3 items-center">
+            <TravelCard btn="FLIGHT" href="flight" img={flight} />
+            <TravelCard btn="BUS" href="bus" img={bus} />
+            <TravelCard btn="TRAIN" href="train" img={train} />
           </article>
         </aside>
       </main>
