@@ -4,23 +4,28 @@ import bus from "../media/bus.json";
 import train from "../media/train.json";
 import SwipperComponent from "../bus/SwipperComponent";
 import { TravelCard } from "../travelCard/TravelCard";
+import SwiperCards from "../SwiperCards";
 
 const BookingLayout = () => {
   return (
     <>
-      <main className=" w-[100%] py-16 sm:px-16 xs:px-6 flex flex-wrap">
-        {/* <aside
-          className="xs:w-[100%] sm:w-[65%] sm:h-[27vw] xs:h-[49vw]"
-          id="swiper-box"
-        >
-          <SwipperComponent />
-        </aside> */}
-        <aside className="w-[80%] h-[27vw]">
-          <article className="w-[100%] h-[100%] flex gap-3 items-center">
+      <main className="w-[100%] xs:py-3 sm:py-16 sm:px-16 xs:px-6 flex xs:flex-wrap sm:flex-nowrap gap-2">
+        <aside className="w-[70%]">
+          <article className="w-[100%] flex sm:flex-row xs:flex-col flex-wrap xs:gap-2 sm:gap-3 items-center">
             <TravelCard btn="FLIGHT" href="flight" img={flight} />
             <TravelCard btn="BUS" href="bus" img={bus} />
             <TravelCard btn="TRAIN" href="train" img={train} />
           </article>
+        </aside>
+        <aside
+          className="xs:w-[100%] sm:w-[30%] sm:h-[27vw] xs:h-[69vw]"
+          id="swiper-box"
+        >
+          <SwiperCards />
+            <h1 className="xs:text-[15px] sm:text-[20px] font-mono font-bold uppercase text-neutral-600 text-center pt-4">
+             <i>
+              *** Most Booked ***</i>
+            </h1>
         </aside>
       </main>
     </>

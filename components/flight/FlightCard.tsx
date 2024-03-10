@@ -1,6 +1,7 @@
 import React from 'react'
 import { IoIosArrowDown } from "react-icons/io";
 import HoverRating from "../Rating";
+import CartModal from '../cart/CartModal';
 
 
 const FlightCard = () => {
@@ -74,9 +75,8 @@ const FlightCard = () => {
                 </div>
               </article>
               <article className="h-[100%] flex items-center ">
-                <button className="px-3 py-1 bg-[#a3b5e9] hover:bg-[#7189cf] transition-all duration-100 cursor-pointer rounded-md">
-                  {" "}
-                  BOOK NOW
+                <button className="scale-95 font-semibold text-neutral-800 text-[15px] px-3 py-1 bg-[#a3b5e9] hover:bg-[#7189cf] transition-all duration-100 cursor-pointer rounded-md">
+                <CartModal />
                 </button>
               </article>
             </div>
